@@ -1,0 +1,27 @@
+{
+   "environment": {
+    "qx.icontheme": "Tango"
+   },
+	"applications": [
+		{
+			"class": "qxl.formdemo.Application",
+			"theme": "qx.theme.Modern",
+			"name": "formdemo",
+			"title": "Qooxdoo Form Demo"
+		}
+	],
+	/** Targets */
+	"targets": [
+		{
+			"type": "source",
+			"outputPath": "source-output"
+		}
+	],
+	"defaultTarget": "source",
+	"locales": [
+		"en"
+	],
+	"serve": {
+	   "listenPort": 8080
+	}
+}
