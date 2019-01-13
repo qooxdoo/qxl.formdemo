@@ -15,8 +15,7 @@
         "email": "Henner DOT Kollmann AT gmx DOT de"
       }
     ],
-    "version": "0.1.1",
-    "qooxdoo-range": "^6.0.0-alpha"
+    "version": "0.1.1"
   },
   "provides": {
     "namespace": "qxl.formdemo",
@@ -25,5 +24,9 @@
     "resource": "source/resource",
     "translation": "source/translation",
     "type": "library"
-  }
+  },
+   "requires": {
+      "qooxdoo-sdk": "^6.0.0-alpha"
+   }
+  
 }
