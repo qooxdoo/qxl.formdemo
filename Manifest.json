@@ -16,7 +16,7 @@
         "email": "Henner DOT Kollmann AT gmx DOT de"
       }
     ],
-    "version": "0.1.2"
+    "version": "1.0.0-beta"
   },
   "provides": {
     "namespace": "qxl.formdemo",
@@ -28,6 +28,6 @@
   },
   "requires": {
     "@qooxdoo/compiler": "^1.0.0-beta",
-    "@qooxdoo/framework": "^6.0.0-alpha"
+    "@qooxdoo/framework": "^6.0.0-beta"
   }
 }
