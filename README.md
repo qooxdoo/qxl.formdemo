@@ -6,8 +6,8 @@ A form demo used in different demo apps
 ## Usage
 
 ```
-$ qx contrib update
-$ qx contrib install qooxdoo/qxl.formdemo
+$ qx pkg update
+$ qx pkg install qooxdoo/qxl.formdemo
 $ qx serve 
 ```
 
