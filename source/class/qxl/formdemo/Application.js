@@ -24,8 +24,7 @@ qx.Class.define("qxl.formdemo.Application",
   {
     __items : null,
 
-    main : function()
-    {
+    main : function() {
       this.base(arguments);
 
       this.__items = new qxl.formdemo.FormItems();
@@ -33,8 +32,7 @@ qx.Class.define("qxl.formdemo.Application",
     }
   },
 
-  destruct : function()
-  {
+  destruct : function() {
     this.__items.destroy();
   }
 });

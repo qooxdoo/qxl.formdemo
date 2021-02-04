@@ -29,8 +29,7 @@ qx.Class.define("qxl.formdemo.FormItems", {
   members : {
     __widgets : null,
 
-    _createView : function()
-    {
+    _createView : function() {
       var grid = new qx.ui.layout.Grid(20, 5);
       grid.setColumnFlex(0, 1);
       grid.setColumnFlex(1, 1);
@@ -192,8 +191,7 @@ qx.Class.define("qxl.formdemo.FormItems", {
       this.__widgets.push(splitButton);
 
       // Listener
-      repeatButton.addListener("execute", function()
-      {
+      repeatButton.addListener("execute", function() {
         var tempValue = parseInt(repeatButton.getLabel(), 10) + 1;
         repeatButton.setLabel(tempValue.toString());
       });
@@ -259,8 +257,7 @@ qx.Class.define("qxl.formdemo.FormItems", {
     },
 
 
-    __createItems: function(widget)
-    {
+    __createItems: function(widget) {
       for (var i = 0; i < 10; i++) {
         var tempItem = new qx.ui.form.ListItem("Item " + i);
         widget.add(tempItem);
@@ -268,8 +265,7 @@ qx.Class.define("qxl.formdemo.FormItems", {
     },
 
 
-    __createItemsVirtual: function(widget)
-    {
+    __createItemsVirtual: function(widget) {
       // Creates the model data
       var model = new qx.data.Array();
       for (var i = 0; i < 300; i++) {
@@ -279,16 +275,15 @@ qx.Class.define("qxl.formdemo.FormItems", {
     },
 
 
-    __createMenuForMenuButton : function()
-    {
+    __createMenuForMenuButton : function() {
       // Creates the option menu
-      var optionMenu = new qx.ui.menu.Menu;
+      var optionMenu = new qx.ui.menu.Menu();
 
       for (var i = 0; i < 3; i++) {
         optionMenu.add(new qx.ui.menu.RadioButton("Option" + i));
       }
 
-      var groupOptions = new qx.ui.form.RadioGroup;
+      var groupOptions = new qx.ui.form.RadioGroup();
       groupOptions.add.apply(groupOptions, optionMenu.getChildren());
 
       // create main menu and buttons
@@ -307,9 +302,8 @@ qx.Class.define("qxl.formdemo.FormItems", {
     },
 
 
-    __createMenuForSplitButton : function()
-    {
-      var menu = new qx.ui.menu.Menu;
+    __createMenuForSplitButton : function() {
+      var menu = new qx.ui.menu.Menu();
 
       var site1 = new qx.ui.menu.Button("Website 1");
       var site2 = new qx.ui.menu.Button("Website 2");
