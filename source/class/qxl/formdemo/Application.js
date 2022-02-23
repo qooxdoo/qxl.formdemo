@@ -16,23 +16,21 @@
 
 ************************************************************************ */
 
-qx.Class.define("qxl.formdemo.Application",
-{
-  extend : qx.application.Standalone,
+qx.Class.define("qxl.formdemo.Application", {
+  extend: qx.application.Standalone,
 
-  members :
-  {
-    __items : null,
+  members: {
+    __items: null,
 
-    main : function() {
-      this.base(arguments);
+    main() {
+      super.main();
 
       this.__items = new qxl.formdemo.FormItems();
       this.getRoot().add(this.__items);
-    }
+    },
   },
 
-  destruct : function() {
+  destruct() {
     this.__items.destroy();
-  }
+  },
 });
